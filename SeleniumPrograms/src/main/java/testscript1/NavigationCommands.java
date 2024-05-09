@@ -1,4 +1,4 @@
-package package1;
+package testscript1;
 
 public class NavigationCommands extends Base
 {

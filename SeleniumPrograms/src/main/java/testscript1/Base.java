@@ -1,9 +1,13 @@
-package package1;
+package testscript1;
+
+import java.time.Duration;
 
 import org.openqa.selenium.WebDriver; //dependency added in pom
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Base {
+public class Base
+{
+	
     public WebDriver driver; //declaring the variable 'driver' globally
 	
     //method1 To Load chrome Web Driver
@@ -12,6 +16,8 @@ public class Base {
 	driver = new ChromeDriver(); //to launch webdriver for chrome; variable 'driver' has the browser
 	driver.get("https://selenium.qabible.in/"); //to launch the url 
 	//driver.manage().window().maximize(); //to maximize the window
+//	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));//implicit wait
+	
 	}
 	
 	
@@ -28,7 +34,5 @@ public class Base {
 		base.initializeBrowser();
         base.driverQuitAndClose();
 	}
-	
-	
-
+		
 }
